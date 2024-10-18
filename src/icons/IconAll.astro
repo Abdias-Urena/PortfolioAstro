@@ -1,0 +1,60 @@
+---
+import IconAstro from "./IconAstro.astro";
+import IconMaterialUi from "./IconMaterialUi.astro";
+import IconNextjs from "./IconNextjs.astro";
+import IconTailwind from "./IconTailwind.astro";
+import IconTypeScript from "./IconTypeScript.astro";
+import IconHtml from "./IconHtml.astro";
+import IconCss from "./IconCss.astro";
+import IconReact from "./IconReact.astro";
+import IconGit from "./IconGit.astro";
+import IconGitHub from "./IconGtiHub.astro";
+import IconJavaScript from "./IconJavaScritp.astro";
+import IconMongodb from "./IconMongodb.astro";
+import IconNodeJs from "./IconNodeJs.astro";
+import IconPhp from "./IconPhp.astro";
+import IconBootstrap from "./IconBootstrap.astro";
+import IconMySql from "./IconMySql.astro";
+import IconJava from "./IconJava.astro";
+import IconFlutter from "./IconFlutter.astro";
+import IconDart from "./IconDart.astro";
+import IconFirebase from "./IconFirebase.astro";
+import IconGoogle from "./IconGoogle.astro";
+import IconProcessing from "./IconProcessing.astro";
+import IconPython from "./IconPython.astro";
+import IconCplusplus from "./IconCPlusPlus.astro";
+
+export const ICONS = {
+  html: IconHtml,
+  css: IconCss,
+  javaScript: IconJavaScript,
+  react: IconReact,
+  astro: IconAstro,
+  materialUi: IconMaterialUi,
+  nextjs: IconNextjs,
+  tailwind: IconTailwind,
+  typeScript: IconTypeScript,
+  git: IconGit,
+  github: IconGitHub,
+  mongodb: IconMongodb,
+  nodejs: IconNodeJs,
+  php: IconPhp,
+  bootstrap: IconBootstrap,
+  mysql: IconMySql,
+  java: IconJava,
+  flutter: IconFlutter,
+  dart: IconDart,
+  firebase: IconFirebase,
+  google: IconGoogle,
+  processing: IconProcessing,
+  python: IconPython,
+  cplusplus: IconCplusplus,
+  // add new icons here <--
+  // Make sure that when calling the icon the key is the same
+  // "optional" in the IconKeys const file adds the icon key for when you call IconKeys.nameIcon
+};
+
+export function getIconComponent(iconName: string) {
+  return ICONS[iconName] || null;
+}
+---
